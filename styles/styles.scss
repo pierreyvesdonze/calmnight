@@ -52,6 +52,7 @@ body {
 
     &:hover {
         letter-spacing: .4em;
+
         &:after {
             content: ' >>'
         }
@@ -72,7 +73,6 @@ NAV
 MAIN TITLE
 ******************************************
 */
-
 .main-title-container {
     position: absolute;
     bottom: 1%;
@@ -114,7 +114,11 @@ MAIN TITLE
     }
 }
 
-// HOMEPAGE
+/*
+******************************************
+HOMEPAGE
+******************************************
+*/
 .bg-container {
     position: relative;
     width: 100%;
@@ -137,7 +141,53 @@ MAIN TITLE
 }
 
 .bg-down {
+    z-index: 0;
     height: 100vh;
     background-image: url('../images/bg-down.png');
+    background-size: cover;
+
+    @include sm {
+        background-image: url('../images/bg-down-xs.png');
+    }
+
+    @include xs {
+        background-image: url('../images/bg-down-xs.png');
+    }
 }
 
+/*
+******************************************
+QUICK TOUR
+******************************************
+*/
+
+.explore-bg-up {
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 180vh;
+    background-image: url('../images/pyeye-night-car-geo.jpg');
+}
+
+.explore-titles {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    left: 20%
+}
+
+.explore-title {
+    top: -400;
+    z-index: 2;
+    position: absolute;
+    color: var(--text-color);
+    font-size: 3em;
+    text-decoration: none;
+    transition: ease-in .1s;
+
+    &:hover {
+        letter-spacing: .4em;
+    }
+}
