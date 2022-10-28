@@ -121,7 +121,8 @@ HOMEPAGE
 }
 
 .bg-up,
-.bg-down {
+.bg-down,
+.bg-explore-down {
   width: 100%;
   position: absolute;
   background-size: cover;
@@ -138,12 +139,6 @@ HOMEPAGE
   z-index: 0;
   height: 100vh;
   background-image: url("../images/bg-down.png");
-  background-size: cover;
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .bg-down {
-    background-image: url("../images/bg-down-xs.png");
-  }
 }
 @media (min-width: 300px) and (max-width: 576px) {
   .bg-down {
@@ -157,24 +152,35 @@ QUICK TOUR
 ******************************************
 */
 .explore-bg-up {
+  opacity: 0;
   width: 100%;
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 180vh;
-  background-image: url("../images/pyeye-night-car-geo.jpg");
+  height: 100vh;
+  background-image: url("../images/bg-explore-dekstop.jpg");
+}
+@media (min-width: 992px) and (max-width: 1280px) {
+  .explore-bg-up {
+    background-image: url("../images/bg-explore-tablet.jpg");
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .explore-bg-up {
+    background-image: url("../images/bg-explore-tablet.jpg");
+  }
 }
 
 .explore-titles {
   z-index: 1;
   position: relative;
+  top: 20%;
   width: 100%;
   left: 20%;
 }
 
 .explore-title {
-  top: -400;
   z-index: 2;
   position: absolute;
   color: var(--text-color);
