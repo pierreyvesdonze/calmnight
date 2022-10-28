@@ -1,0 +1,108 @@
+/*
+***********************************
+MEDIA QUERIES
+***********************************
+*/
+/*
+******************************************
+VARIABLES
+******************************************
+*/
+:root {
+  --text-color: white;
+  --bg-color: black;
+}
+
+/*
+******************************************
+GENERAL
+******************************************
+*/
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: var(--text-color);
+  font-family: "Poiret One", cursive;
+  overflow: hidden;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+/*
+******************************************
+NAV
+******************************************
+*/
+.nav-btn {
+  color: var(--text-color) !important;
+}
+
+/*
+******************************************
+MAIN TITLE
+******************************************
+*/
+.main-title-container {
+  position: absolute;
+  bottom: 1%;
+  right: 4%;
+  overflow: hidden;
+}
+.main-title-container h1 {
+  margin: 0;
+  text-align: end;
+  overflow: hidden;
+}
+.main-title-container h1:nth-child(1) {
+  font-size: 6em;
+}
+.main-title-container h1:nth-child(2) {
+  font-size: 9em;
+}
+@media (min-width: 1280px) {
+  .main-title-container h1:nth-child(1) {
+    font-size: 4em;
+  }
+  .main-title-container h1:nth-child(2) {
+    font-size: 7em;
+  }
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  .main-title-container h1:nth-child(1) {
+    font-size: 2.7em;
+  }
+  .main-title-container h1:nth-child(2) {
+    font-size: 4em;
+  }
+}
+
+.bg-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-up,
+.bg-down {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.bg-up {
+  background-image: url("../images/bg-up.png");
+}
+
+.bg-down {
+  background-image: url("../images/bg-down.png");
+}/*# sourceMappingURL=styles.css.map */
