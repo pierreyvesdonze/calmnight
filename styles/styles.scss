@@ -102,6 +102,26 @@ MAIN TITLE
             }
         }
 
+        @include lg {
+            &:nth-child(1) {
+                font-size: 4em;
+            }
+
+            &:nth-child(2) {
+                font-size: 7em;
+            }
+        }
+
+        @include sm {
+            &:nth-child(1) {
+                font-size: 4em;
+            }
+
+            &:nth-child(2) {
+                font-size: 7em;
+            }
+        }
+
         @include xs {
             &:nth-child(1) {
                 font-size: 2.7em;
