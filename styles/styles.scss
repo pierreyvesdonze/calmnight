@@ -31,6 +31,33 @@ body {
     background-color: var(--bg-color);
 }
 
+#home-explore-link {
+    position: absolute;
+    opacity: 0;
+    top: 40%;
+    left: 50%;
+}
+
+.custom-link {
+    font-size: 1em;
+    color: var(--text-color);
+    letter-spacing: .2em;
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 1em;
+    border-radius: 30px;
+    transition: ease-in-out .16s;
+    cursor: pointer;
+
+    &:hover {
+        letter-spacing: .4em;
+        &:after {
+            content: ' >>'
+        }
+    }
+}
+
 /*
 ******************************************
 NAV
@@ -98,7 +125,6 @@ MAIN TITLE
 .bg-up,
 .bg-down {
     width: 100%;
-    height: 100vh;
     position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
@@ -106,9 +132,12 @@ MAIN TITLE
 }
 
 .bg-up {
+    height: 180vh;
     background-image: url('../images/bg-up.png');
 }
 
 .bg-down {
+    height: 100vh;
     background-image: url('../images/bg-down.png');
 }
+
