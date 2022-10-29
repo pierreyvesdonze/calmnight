@@ -40,24 +40,39 @@ body {
   top: 40%;
   left: 50%;
 }
+#home-explore-link:hover {
+  letter-spacing: 0.4em;
+}
+#home-explore-link:hover:after {
+  content: " >>";
+}
 
-.custom-link {
+.custom-link,
+.back-link {
   font-size: 1em;
   color: var(--text-color);
   letter-spacing: 0.2em;
   text-decoration: none;
   border: 1px solid white;
   background-color: transparent;
-  padding: 1em;
   border-radius: 30px;
   transition: ease-in-out 0.16s;
   cursor: pointer;
 }
-.custom-link:hover {
+.custom-link:hover,
+.back-link:hover {
   letter-spacing: 0.4em;
 }
-.custom-link:hover:after {
-  content: " >>";
+
+.custom-link {
+  padding: 1em;
+}
+
+.back-link {
+  padding: 0.5em;
+}
+.back-link:hover {
+  padding: 1em;
 }
 
 /*
@@ -191,7 +206,7 @@ QUICK TOUR
 .explore-titles {
   z-index: 1;
   position: relative;
-  top: 20%;
+  top: 15%;
   width: 100%;
   left: 20%;
 }
@@ -206,4 +221,13 @@ QUICK TOUR
 }
 .explore-title:hover {
   letter-spacing: 0.4em;
+}
+
+/*
+******************************************
+ABOUT
+******************************************
+*/
+.about-container {
+  position: absolute;
 }/*# sourceMappingURL=styles.css.map */

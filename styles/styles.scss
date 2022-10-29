@@ -36,19 +36,6 @@ body {
     opacity: 0;
     top: 40%;
     left: 50%;
-}
-
-.custom-link {
-    font-size: 1em;
-    color: var(--text-color);
-    letter-spacing: .2em;
-    text-decoration: none;
-    border: 1px solid white;
-    background-color: transparent;
-    padding: 1em;
-    border-radius: 30px;
-    transition: ease-in-out .16s;
-    cursor: pointer;
 
     &:hover {
         letter-spacing: .4em;
@@ -56,6 +43,35 @@ body {
         &:after {
             content: ' >>'
         }
+    }
+}
+
+.custom-link,
+.back-link {
+    font-size: 1em;
+    color: var(--text-color);
+    letter-spacing: .2em;
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 30px;
+    transition: ease-in-out .16s;
+    cursor: pointer;
+
+    &:hover {
+        letter-spacing: .4em;
+    }
+}
+
+.custom-link {
+    padding: 1em;
+}
+
+.back-link {
+    padding: .5em;
+
+    &:hover {
+        padding: 1em;
     }
 }
 
@@ -202,7 +218,7 @@ QUICK TOUR
 .explore-titles {
     z-index: 1;
     position: relative;
-    top: 20%;
+    top: 15%;
     width: 100%;
     left: 20%
 }
@@ -218,4 +234,13 @@ QUICK TOUR
     &:hover {
         letter-spacing: .4em;
     }
+}
+
+/*
+******************************************
+ABOUT
+******************************************
+*/
+.about-container {
+    position: absolute;
 }
