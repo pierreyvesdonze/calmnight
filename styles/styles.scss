@@ -264,6 +264,64 @@ ABOUT
 WEBSITES
 ******************************************
 */
+
+/*BG*/
+.website-bg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: .16;
+}
+
+.website-bg-monpoison {
+    background-image: url('../images/monpoison.png');
+
+    @include sm {
+        background-image: url('../images/monpoison-xs.png');
+    }
+
+    @include xs {
+        background-image: url('../images/monpoison-xs.png');
+    }
+}
+
+.website-bg-mymarket {
+    background-image: url('../images/mymarket.png');
+
+    @include sm {
+        background-image: url('../images/mymarket-xs.png');
+    }
+
+    @include xs {
+        background-image: url('../images/mymarket-xs.png');
+    }
+}
+
+.website-bg-imgreducer {
+    background-image: url('../images/imgreducer.png');
+
+    @include sm {
+        background-image: url('../images/imgreducer-xs.png');
+    }
+
+    @include xs {
+        background-image: url('../images/imgreducer-xs.png');
+    }
+}
+
+.website-bg-mycontacts {
+    background-image: url('../images/mycontacts.png');
+
+    @include sm {
+        background-image: url('../images/mycontacts-xs.png');
+    }
+
+    @include xs {
+        background-image: url('../images/mycontacts-xs.png');
+    }
+}
+
+/*website*/
 .website-box-container {
     z-index: 1;
     position: absolute;
@@ -289,6 +347,16 @@ WEBSITES
     padding-right: 1em;
     opacity: 0;
     margin-top: 33px;
+
+    @include xs {
+        height: 30vh;
+        overflow-y: auto;
+    }
+
+    @include sm {
+        height: 30vh;
+        overflow-y: auto;
+    }
 }
 
 .brands-logos {
@@ -301,10 +369,16 @@ WEBSITES
     width: 30px;
 }
 
-.website-link {
-    margin-left: 3em;
+.website-links {
     position: absolute;
-    margin-top: 30px;
+    top: 70%;
+    left: 1%
+}
+
+.website-link {
+    position: absolute;
+    bottom: 3%;
+    left: 12%;
 }
 
 .next-link,
@@ -313,11 +387,13 @@ WEBSITES
     bottom: 3%;
     left: 3%;
     z-index: 3;
+
     @include xs {
-        bottom: 18%;
+        bottom: 28%;
     }
+
     @include sm {
-        bottom: 18%;
+        bottom: 28%;
     }
 }
 

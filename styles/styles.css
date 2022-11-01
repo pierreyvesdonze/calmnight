@@ -258,6 +258,71 @@ ABOUT
 WEBSITES
 ******************************************
 */
+/*BG*/
+.website-bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.16;
+}
+
+.website-bg-monpoison {
+  background-image: url("../images/monpoison.png");
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .website-bg-monpoison {
+    background-image: url("../images/monpoison-xs.png");
+  }
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  .website-bg-monpoison {
+    background-image: url("../images/monpoison-xs.png");
+  }
+}
+
+.website-bg-mymarket {
+  background-image: url("../images/mymarket.png");
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .website-bg-mymarket {
+    background-image: url("../images/mymarket-xs.png");
+  }
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  .website-bg-mymarket {
+    background-image: url("../images/mymarket-xs.png");
+  }
+}
+
+.website-bg-imgreducer {
+  background-image: url("../images/imgreducer.png");
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .website-bg-imgreducer {
+    background-image: url("../images/imgreducer-xs.png");
+  }
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  .website-bg-imgreducer {
+    background-image: url("../images/imgreducer-xs.png");
+  }
+}
+
+.website-bg-mycontacts {
+  background-image: url("../images/mycontacts.png");
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .website-bg-mycontacts {
+    background-image: url("../images/mycontacts-xs.png");
+  }
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  .website-bg-mycontacts {
+    background-image: url("../images/mycontacts-xs.png");
+  }
+}
+
+/*website*/
 .website-box-container {
   z-index: 1;
   position: absolute;
@@ -285,6 +350,18 @@ WEBSITES
   opacity: 0;
   margin-top: 33px;
 }
+@media (min-width: 300px) and (max-width: 576px) {
+  .website-text {
+    height: 30vh;
+    overflow-y: auto;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .website-text {
+    height: 30vh;
+    overflow-y: auto;
+  }
+}
 
 .brands-logos {
   padding-left: 1em;
@@ -296,10 +373,16 @@ WEBSITES
   width: 30px;
 }
 
-.website-link {
-  margin-left: 3em;
+.website-links {
   position: absolute;
-  margin-top: 30px;
+  top: 70%;
+  left: 1%;
+}
+
+.website-link {
+  position: absolute;
+  bottom: 3%;
+  left: 12%;
 }
 
 .next-link,
@@ -312,13 +395,13 @@ WEBSITES
 @media (min-width: 300px) and (max-width: 576px) {
   .next-link,
 .previous-link {
-    bottom: 18%;
+    bottom: 28%;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .next-link,
 .previous-link {
-    bottom: 18%;
+    bottom: 28%;
   }
 }
 

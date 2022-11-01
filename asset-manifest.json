@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/calmnight/static/js/main.a82ec743.js",
+    "main.js": "/calmnight/static/js/main.f2586a3d.js",
     "index.html": "/calmnight/index.html",
-    "main.a82ec743.js.map": "/calmnight/static/js/main.a82ec743.js.map"
+    "main.f2586a3d.js.map": "/calmnight/static/js/main.f2586a3d.js.map"
   },
   "entrypoints": [
-    "static/js/main.a82ec743.js"
+    "static/js/main.f2586a3d.js"
   ]
 }
