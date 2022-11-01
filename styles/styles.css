@@ -253,6 +253,10 @@ ABOUT
   }
 }
 
+.homelink {
+  color: var(--text-color);
+}
+
 /*
 ******************************************
 WEBSITES
