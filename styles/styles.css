@@ -171,6 +171,11 @@ HOMEPAGE
   height: 100vh;
   background-image: url("../images/bg-down.png");
 }
+@media (min-width: 576px) and (max-width: 768px) {
+  .bg-down {
+    background-image: url("../images/bg-down-xs.png");
+  }
+}
 @media (min-width: 300px) and (max-width: 576px) {
   .bg-down {
     background-image: url("../images/bg-down-xs.png");
@@ -254,14 +259,14 @@ WEBSITES
 ******************************************
 */
 .website-box-container {
+  z-index: 1;
   position: absolute;
-  height: 80vh;
   width: 100%;
 }
 .website-box-container h1 {
-  position: absolute;
-  left: 2em;
+  margin-top: 2%;
   font-size: 3em;
+  padding-left: 1em;
 }
 @media (min-width: 300px) and (max-width: 576px) {
   .website-box-container h1 {
@@ -274,12 +279,53 @@ WEBSITES
   }
 }
 
-.website-box-img {
+.website-text {
+  padding-left: 1em;
+  padding-right: 1em;
+  opacity: 0;
+  margin-top: 33px;
+}
+
+.brands-logos {
+  padding-left: 1em;
+  margin-top: 33px;
+}
+
+.brands-logos img {
+  filter: invert(1);
+  width: 30px;
+}
+
+.website-link {
+  margin-left: 3em;
   position: absolute;
-  width: 100%;
-  height: 100vh;
-  opacity: 0.3;
-  background-image: url("../images/monpoison.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+
+.next-link,
+.previous-link {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  z-index: 3;
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  .next-link,
+.previous-link {
+    bottom: 18%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .next-link,
+.previous-link {
+    bottom: 18%;
+  }
+}
+
+.next-link:hover:after {
+  content: ">>>";
+}
+
+.previous-link:hover:before {
+  content: "<<<";
 }/*# sourceMappingURL=styles.css.map */
